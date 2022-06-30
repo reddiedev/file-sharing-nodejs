@@ -16,6 +16,8 @@ I am still learning using Git and Github, I will update this repo as soon as I h
 
 ## Running the site
 
+I envisioned the app to only run locally when needed so in order to actually transfer files, the two devices in question must be connected to the same local network
+
 ```
 gh repo clone reddiedev/file-sharing-nodejs
 
@@ -26,4 +28,4 @@ npm start
 
 ## Acknowledgements
 
-This project was largely inspired from a tutorial by Web Dev Simplified on [Youtube](https://youtu.be/AHXFMu8xVsc). You can view his repo [here](https://github.com/WebDevSimplified/file-sharing-node-js)
+This project was largely inspired from a tutorial by Web Dev Simplified on [Youtube](https://youtu.be/AHXFMu8xVsc). You can view his original repo [here](https://github.com/WebDevSimplified/file-sharing-node-js)
