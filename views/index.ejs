@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedShare</title>
+</head>
+
+<body>
+    <div
+        style="display:flex;justify-content: center;align-items: center; width: 100%; min-height: 100vh;font-family: monospace;">
+        <form action="/upload" method="post"
+            style="display: grid; gap: .5rem; grid-template-columns: auto 1fr; max-width: 500px; margin: 0 auto; border-style: solid; border-width: 2px; padding: 10px; border-radius: 5px;"
+            enctype="multipart/form-data">
+            <% if (locals.fileLink !=null) { %>
+                <div style="margin-bottom: 1rem;grid-column: span 2">
+                    Your file <%= locals.originalName %> was uploaded here:
+                        <a href="<%= locals.fileLink %>">
+                            <%= locals.fileLink %>
+                        </a>
+                </div>
+                <% } %>
+                    <label for="file" style="font-weight:bold;font-size: x-large;">File:</label>
+                    <input type="file" id="file" name="file" required style="align-self:center;font-size: small;" />
+                    <button style="grid-column: span 2; margin-top: 30px; font-size: larger; "
+                        type="submit">Share</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
